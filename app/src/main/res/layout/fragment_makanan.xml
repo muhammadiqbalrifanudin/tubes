@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MakananFragment"
+    android:background="#579cd1">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/makanan1"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gorengan" />
+
+                <TextView
+                    android:id="@+id/tx_nama_mkn1"
+                    android:textColor="#1F2247"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Gorengan" />
+
+                <TextView
+                    android:id="@+id/tx_hrg_mkn1"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Rp. 5.00"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/makanan2"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/makanan1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/nasicampur" />
+
+                <TextView
+                    android:id="@+id/tx_nama_mkn2"
+                    android:textColor="#1F2247"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Nasi Campur" />
+
+                <TextView
+                    android:id="@+id/tx_hrg_mkn2"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Rp. 5.000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/makanan3"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/makanan1">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/usus" />
+
+                <TextView
+                    android:id="@+id/tx_nama_mkn3"
+                    android:textColor="#1F2247"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Usus Ayam" />
+
+                <TextView
+                    android:id="@+id/tx_hrg_mkn3"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Rp. 5.000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/makanan4"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.691"
+                app:layout_constraintStart_toEndOf="@+id/makanan3"
+                app:layout_constraintTop_toBottomOf="@+id/makanan2">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/tejus" />
+
+                <TextView
+                    android:id="@+id/tx_nama_mkn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Tea Jus"
+                    android:textColor="#1F2247"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tx_hrg_mkn4"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Rp. 1.000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/makanan5"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/makanan3">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/miegor" />
+
+                <TextView
+                    android:id="@+id/tx_nama_mkn5"
+                    android:textColor="#1F2247"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Mie Goreng" />
+
+                <TextView
+                    android:id="@+id/tx_hrg_mkn5"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Rp. 8.000"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

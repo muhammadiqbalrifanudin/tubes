@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/menu_makanan"
+        android:title="Makanan"
+        android:icon="@drawable/ic_makanan"/>
+
+    <item
+        android:id="@+id/rokok1"
+        android:title="Rokok"
+        android:icon="@drawable/ic_baseline_smoking_rooms_24"/>
+</menu>
